@@ -29,16 +29,16 @@ void loop() {
       lcd.setCursor(0,1);
       lcd.print("Time: Day");
       lcd.print("                ");
-      digitalWrite(RELAY_PIN, HIGH);  // bật bơm
+      digitalWrite(RELAY_PIN, HIGH);  
       digitalWrite(LED_PIN, HIGH);
     }else{
       lcd.setCursor(0,1);
       lcd.print("Time: Night");
-      digitalWrite(RELAY_PIN, LOW); // tắt bơm
+      digitalWrite(RELAY_PIN, LOW); 
       digitalWrite(LED_PIN, LOW);
     }
   } else {
-    digitalWrite(RELAY_PIN, LOW); // tắt bơm
+    digitalWrite(RELAY_PIN, LOW);
     digitalWrite(LED_PIN, LOW);
     lcd.setCursor(0, 0);
     lcd.print("Soil: Wet");
